@@ -1,0 +1,831 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df2799923c76d2842b535aa8cabb0d08, type: 3}
+  m_Name: PCGTerrainData
+  m_EditorClassIdentifier: 
+  Config:
+  - Name: Terrain
+    XOffset1000: 0
+    XOffset100: 0
+    XOffset10: 0
+    XOffset1: 0
+    YOffset1000: 0
+    YOffset100: 0
+    YOffset10: 0
+    YOffset1: 0
+    ZOffset: 0
+    MaxValue: 0.239
+    PerlinScalar: 0
+    GenNoiseType: 2
+    ProcessParentType: 0
+    CombineType: 0
+    ProcessParentVariables: []
+    Complement: 0
+    Mute: 0
+    DoNotProcessDescendants: 0
+    PCGConfigChildren:
+    - m_storage: 7dfc27af-84dd-45fa-bd11-ab832c6e975b
+    - m_storage: f9b0770c-fa64-4470-b973-79fb10925eca
+    - m_storage: f9cc6fcc-6d85-468d-8a8f-ef38eee4b31b
+    GenNoiseCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 1
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    ProcessParentCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 1
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    guid:
+      m_storage: 002cef59-a56c-421f-bac0-3aa10876c3f0
+  - Name: Biomes
+    XOffset1000: 0
+    XOffset100: 0
+    XOffset10: 0
+    XOffset1: 0
+    YOffset1000: 0
+    YOffset100: 0
+    YOffset10: 0
+    YOffset1: 0
+    ZOffset: 0
+    MaxValue: 0.843
+    PerlinScalar: 4.5
+    GenNoiseType: 0
+    ProcessParentType: 0
+    CombineType: 0
+    ProcessParentVariables: []
+    Complement: 0
+    Mute: 0
+    DoNotProcessDescendants: 0
+    PCGConfigChildren:
+    - m_storage: aaba537e-a2b3-44d1-beb6-7a0f8affb623
+    - m_storage: 54f1c811-f6d0-45a5-a253-90ee36218ea3
+    - m_storage: 46bfb02e-66b0-4387-b1d5-ddbe23d3da52
+    - m_storage: 41ce3731-9bb9-42fa-a71f-3e849b57ea6d
+    - m_storage: cd6d810f-b0b3-4084-83bd-3117ad792666
+    GenNoiseCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: -1
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: -1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    ProcessParentCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: -1
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: -1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    guid:
+      m_storage: 7dfc27af-84dd-45fa-bd11-ab832c6e975b
+  - Name: MountainBiome
+    XOffset1000: 0
+    XOffset100: 0
+    XOffset10: 0
+    XOffset1: 0
+    YOffset1000: 0
+    YOffset100: 0
+    YOffset10: 0
+    YOffset1: 0
+    ZOffset: 0
+    MaxValue: 0
+    PerlinScalar: 0
+    GenNoiseType: 2
+    ProcessParentType: 1
+    CombineType: 3
+    ProcessParentVariables:
+    - 0.5
+    - 0.6
+    - 1
+    - 1
+    Complement: 0
+    Mute: 0
+    DoNotProcessDescendants: 0
+    PCGConfigChildren:
+    - m_storage: 8a21f5e7-c82b-4301-973f-8d3618f8ae75
+    GenNoiseCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: -1
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: -1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    ProcessParentCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: -1
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: -1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    guid:
+      m_storage: aaba537e-a2b3-44d1-beb6-7a0f8affb623
+  - Name: MountainBase
+    XOffset1000: 0
+    XOffset100: 0
+    XOffset10: 0
+    XOffset1: 0
+    YOffset1000: 0
+    YOffset100: 0
+    YOffset10: 0
+    YOffset1: 0
+    ZOffset: 0
+    MaxValue: 0.858
+    PerlinScalar: 10.7
+    GenNoiseType: 0
+    ProcessParentType: 0
+    CombineType: 0
+    ProcessParentVariables: []
+    Complement: 0
+    Mute: 0
+    DoNotProcessDescendants: 0
+    PCGConfigChildren:
+    - m_storage: db75b4c3-2368-4464-8206-e30cb2a09242
+    GenNoiseCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: -1
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: -1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    ProcessParentCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: -1
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: -1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    guid:
+      m_storage: 8a21f5e7-c82b-4301-973f-8d3618f8ae75
+  - Name: MountainDetails
+    XOffset1000: 0
+    XOffset100: 0
+    XOffset10: 0
+    XOffset1: 0
+    YOffset1000: 0
+    YOffset100: 0
+    YOffset10: 0
+    YOffset1: 0
+    ZOffset: 0
+    MaxValue: 0.062
+    PerlinScalar: 62.5
+    GenNoiseType: 0
+    ProcessParentType: 0
+    CombineType: 0
+    ProcessParentVariables: []
+    Complement: 0
+    Mute: 0
+    DoNotProcessDescendants: 0
+    PCGConfigChildren: []
+    GenNoiseCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: -1
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: -1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    ProcessParentCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: -1
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: -1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    guid:
+      m_storage: db75b4c3-2368-4464-8206-e30cb2a09242
+  - Name: HillBiome
+    XOffset1000: 0
+    XOffset100: 0
+    XOffset10: 0
+    XOffset1: 0
+    YOffset1000: 0
+    YOffset100: 0
+    YOffset10: 0
+    YOffset1: 0
+    ZOffset: 0
+    MaxValue: 0
+    PerlinScalar: 0
+    GenNoiseType: 2
+    ProcessParentType: 1
+    CombineType: 3
+    ProcessParentVariables:
+    - 0
+    - 0
+    - 0.15
+    - 0.6
+    Complement: 0
+    Mute: 0
+    DoNotProcessDescendants: 0
+    PCGConfigChildren:
+    - m_storage: c88f007e-3b65-49bd-b936-1ced03993be5
+    GenNoiseCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: -1
+        outSlope: -1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 0.77452374
+        value: 0.09685072
+        inSlope: 1
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    ProcessParentCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: -1
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: -1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    guid:
+      m_storage: 54f1c811-f6d0-45a5-a253-90ee36218ea3
+  - Name: HillBase
+    XOffset1000: 0
+    XOffset100: 0
+    XOffset10: 0
+    XOffset1: 0
+    YOffset1000: 0
+    YOffset100: 0
+    YOffset10: 0
+    YOffset1: 0
+    ZOffset: 0
+    MaxValue: 0.391
+    PerlinScalar: 0
+    GenNoiseType: 0
+    ProcessParentType: 0
+    CombineType: 0
+    ProcessParentVariables: []
+    Complement: 0
+    Mute: 0
+    DoNotProcessDescendants: 0
+    PCGConfigChildren:
+    - m_storage: 0fafa34d-72fd-413b-9d0b-ca96d7a5ba81
+    - m_storage: 6ee6e828-1938-495a-a269-549fbed3e573
+    - m_storage: 3c8fb8af-a748-4e79-8e50-08bcdd264489
+    GenNoiseCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: -1
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: -1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    ProcessParentCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: -1
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: -1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    guid:
+      m_storage: c88f007e-3b65-49bd-b936-1ced03993be5
+  - Name: HillDetails
+    XOffset1000: 0
+    XOffset100: 0
+    XOffset10: 0
+    XOffset1: 0
+    YOffset1000: 0
+    YOffset100: 0
+    YOffset10: 0
+    YOffset1: 0
+    ZOffset: 0
+    MaxValue: 0.049
+    PerlinScalar: 35.6
+    GenNoiseType: 0
+    ProcessParentType: 0
+    CombineType: 0
+    ProcessParentVariables: []
+    Complement: 0
+    Mute: 0
+    DoNotProcessDescendants: 0
+    PCGConfigChildren: []
+    GenNoiseCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: -1
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: -1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    ProcessParentCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: -1
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: -1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    guid:
+      m_storage: 3c8fb8af-a748-4e79-8e50-08bcdd264489
+  - Name: ForestBiome
+    XOffset1000: 0
+    XOffset100: 0
+    XOffset10: 0
+    XOffset1: 0
+    YOffset1000: 0
+    YOffset100: 0
+    YOffset10: 0
+    YOffset1: 0
+    ZOffset: 0
+    MaxValue: 0
+    PerlinScalar: 0.0013
+    GenNoiseType: 2
+    ProcessParentType: 1
+    CombineType: 3
+    ProcessParentVariables:
+    - 0
+    - 0
+    - 0.15
+    - 0.28
+    Complement: 0
+    Mute: 0
+    DoNotProcessDescendants: 0
+    PCGConfigChildren:
+    - m_storage: 5f0630f5-dc62-4413-8852-156c99857b82
+    GenNoiseCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: -1
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: -1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    ProcessParentCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: -1
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: -1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    guid:
+      m_storage: cd6d810f-b0b3-4084-83bd-3117ad792666
+  - Name: ForestBase
+    XOffset1000: 0
+    XOffset100: 0
+    XOffset10: 0
+    XOffset1: 0
+    YOffset1000: 0
+    YOffset100: 0
+    YOffset10: 0
+    YOffset1: 0
+    ZOffset: 0
+    MaxValue: 0.579
+    PerlinScalar: 61.4
+    GenNoiseType: 1
+    ProcessParentType: 2
+    CombineType: 0
+    ProcessParentVariables: []
+    Complement: 0
+    Mute: 0
+    DoNotProcessDescendants: 0
+    PCGConfigChildren:
+    - m_storage: 8a677880-12e9-4b3f-8896-6f6123341572
+    GenNoiseCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0.07083511
+        value: 0.7382202
+        inSlope: -1
+        outSlope: -1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 0.6523209
+        value: 0.14445928
+        inSlope: 1
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    ProcessParentCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: -1
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: -1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    guid:
+      m_storage: 5f0630f5-dc62-4413-8852-156c99857b82
+  - Name: ForestDetails
+    XOffset1000: 0
+    XOffset100: 0
+    XOffset10: 0
+    XOffset1: 0
+    YOffset1000: 0
+    YOffset100: 0
+    YOffset10: 0
+    YOffset1: 0
+    ZOffset: 0
+    MaxValue: 0
+    PerlinScalar: 24.3
+    GenNoiseType: 0
+    ProcessParentType: 0
+    CombineType: 0
+    ProcessParentVariables: []
+    Complement: 0
+    Mute: 0
+    DoNotProcessDescendants: 0
+    PCGConfigChildren: []
+    GenNoiseCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: -1
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: -1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    ProcessParentCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: -1
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: -1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    guid:
+      m_storage: 8a677880-12e9-4b3f-8896-6f6123341572
